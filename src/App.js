@@ -4,7 +4,16 @@ import { getBooks } from "./services/fakeBookService";
 
 function App() {
   const books = getBooks();
-  console.log(books.length);
+  for (let b of books) {
+    const salesInfo = b.saleInfo;
+    const { saleability, listPrice } = salesInfo;
+    if (saleability === "FOR_SALE") {
+      const { amount, currencyCode } = listPrice;
+      console.log(amount + currencyCode);
+    } else {
+      console.log(saleability);
+    }
+  }
   return (
     <div className="App">
       <header className="App-header">
