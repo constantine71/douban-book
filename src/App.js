@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import { getBooks } from "./services/fakeBookService";
+import Gallery from "./components/Gallery";
 
 function App() {
   const books = getBooks();
@@ -20,6 +21,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <Gallery />
       </header>
     </div>
   );
