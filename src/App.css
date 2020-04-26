@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #041e42;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -39,7 +39,8 @@
 
 .Gallery-container {
   display: flex;
-  background-color: #8c8c8c;
+  background-color: #ffffff;
+  border: solid 2px #141414;
   justify-content: space-between;
   align-items: center;
   width: 800px;
@@ -51,18 +52,19 @@
   height: 198px;
 }
 
-.slider-button-left {
+/* .slider-button-left {
 }
 
 .slider-button-right {
-}
+} */
 
 .card-list-container {
+  border: solid 0.5px #bfbfbf;
   display: flex;
-  justify-content: space-around;
-  height: 200px;
+  justify-items: flex-start;
+  height: 190px;
   width: 750px;
-  background-color: #bfbfbf;
+  background-color: #ffffff;
 }
 
 .card-container {
@@ -74,7 +76,9 @@
 }
 
 .card-image {
-  border: solid 1px #000000;
+  border-bottom: solid 2px #8c8c8c;
+  border-right: solid 2px #8c8c8c;
+  box-shadow: 3px, 3px, #bfbfbf;
   height: 160px;
   width: 106px;
 }
@@ -84,7 +88,6 @@
   flex-direction: column;
   height: 170px;
   width: 106px;
-  border: solid yellow 1px;
   overflow-wrap: break-word;
 }
 
@@ -93,26 +96,29 @@
   visibility: hidden;
 }
 
-.card-info {
-  border: solid red 1px;
-}
+/* .card-info {
+} */
 
 .card-name {
-  font-size: 70%;
+  font-size: 50%;
   color: #613400;
 }
 .card-author {
-  font-size: 60%;
+  font-size: 40%;
   color: #595959;
 }
 
 .card-footer {
   margin-top: auto;
-  border: solid blue 1px;
 }
 .card-price {
-  font-size: 60%;
+  font-size: 40%;
   text-align: left;
   margin-left: 1em;
   color: #13c2c2;
+}
+
+.book-image {
+  width: 100%;
+  height: 100%;
 }
